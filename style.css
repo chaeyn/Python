@@ -36,12 +36,14 @@ body::before {
     border-bottom: 1px solid #999;
     font-size: 18px; color: #fff;
     outline: none;
+    cursor: pointer;
 }
 
 .int-area label {
     position: absolute; left: 10px; top: 15px;
     font-size: 18px; color: #999;
     transition: all .5s ease;
+    cursor: pointer;
 }
 .int-area label.warning {
     color: red !important;
@@ -59,6 +61,7 @@ body::before {
 .int-area input:valid + label {
     top: -2px;
     font-size: 13px; color: #166cea;
+    cursor: pointer;
 }
 
 .btn-area {margin-top: 30px;}

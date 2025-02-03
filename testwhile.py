@@ -1,6 +1,9 @@
-even = []
 num = 1
-while num < 10:
-	even.append(num)
-	num += 2
-print(even)
+sum = 0
+
+while True:
+    sum = sum + num
+    num += 1
+    if num > 100:
+        break
+print(sum)

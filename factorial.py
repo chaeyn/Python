@@ -4,7 +4,5 @@ def factorial (n):
         output *= i
     return output
 
-print(factorial(2))
-print(factorial(3))
-print(factorial(4))
-print(factorial(5))
+n = int(input())
+print(factorial(n))

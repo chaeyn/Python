@@ -1,14 +1,8 @@
 n = int(input())
-
-maximum = 0
-res = 0
-
+score = list(map(int, input().split()))
+max_score = max(score)
+new_sum = 0
 for i in range(n):
-    m = int(input())
-    if m >= maximum:
-        maximum = m
-for i in range(n):
-    if m[i] < maximum:
-        m[i] = m[i]/maximum*100
-    res += m[i]
-print(res)
+    score[i] = int(score[i]) / max_score * 100
+    new_sum += score[i]
+print(f"{new_sum / n}")

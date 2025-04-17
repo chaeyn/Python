@@ -1,5 +1,6 @@
-s1 = input()
-s2 = input()
-s3 = input()
-if s3.isdigit == True:
-    print(s3)
+for i in range(3, 0, -1):
+    w = input()
+    if w not in ['Fizz', 'Buzz' ,'FizzBuzz']:
+        n = int(w) + i
+        break
+print('Fizz' * (n % 3 == 0) + 'Buzz' * (n % 5 == 0) or n)
